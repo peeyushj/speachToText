@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/header"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="#AFA7EF"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <!--<TextView android:text="@string/hello_world" android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" android:id="@+id/content_id" />-->
+    </LinearLayout>
+
+    <!-- Footer aligned to bottom -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:background="@null"
+        android:orientation="horizontal">
+
+        <!--<Button-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="Start Listening"-->
+            <!--android:onClick="buttonListenClicked"-->
+            <!--android:id="@+id/buttonListener"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="7"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/voiceToText"-->
+            <!--android:orientation="vertical"-->
+            <!--/>-->
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:id="@+id/voiceToText"
+            android:orientation="vertical"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:gravity="top|left"
+            android:scrollbars="vertical"
+            android:hint="Ask me anything by saying ask commonfloor"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scaleType="fitEnd"
+            android:padding="5sp"
+            android:src="@drawable/microphone"
+            android:id="@+id/microphone"
+            android:background="@null"
+            android:onClick="microphoneClicked" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
